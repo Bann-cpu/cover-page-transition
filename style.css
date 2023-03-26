@@ -19,6 +19,7 @@ body{
     position: relative;
     top: 25%;
     font-family: 'Playfair Display', serif;
+    overflow: hidden;
 }
 
 .item_image {
@@ -46,13 +47,47 @@ body{
 }
 
 .item_actionBtn{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 100px;
     font-weight: 900;   
     font-size: 1.2rem;
-    width: 500px;
     height: auto;
-    background: red;
+    background: transparent;
+    padding: 1rem 3rem 1rem;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    border: solid black 1px;
+    left: 12rem;
+    cursor: pointer;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 100%;
+	pointer-events: none;
+	grid-template-rows: repeat(2); /*repeat(2,1fr)*/
+}
+
+.overlay__row {
+	transform: scaleY(0);
+	will-change: transform;
+}
+
+.overlay__row:first-child {
+	transform-origin: 50% 0%; /*H puis V*/
+}
+
+.overlay__row:last-child {
+	transform-origin: 50% 100%;
+}
+
+.previews {
+    display: block;
 }

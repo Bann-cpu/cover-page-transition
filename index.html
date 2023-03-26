@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="container">
-
         <div class="content one">
             <span class="item_date">1889 - 1945</span>
             <h1 class="item_name">Adolf Hitler</h1>
             <img src="/PICTURE1.jpg" alt="A picture of Adolf Hitler" class="item_image">
             <p class="item_descr">Adolf Hitler, était un homme politique, idéologue allemand, qui prends le pouvoir en 1933 d'une Allemagne fragilisé par la Première Guerre Mondiale, il est le père fondateur du nazisme et du troisième Reich. </p>
-            <a class="item_actionBtn">View</a>
+            <button class="item_actionBtn">View</button>
         </div>
 
         <div class="content two">
@@ -23,7 +23,7 @@
             <h1 class="item_name">Winston Churchill</h1>
             <img src="/PICTURE2.jpg" alt="Winston Churchill" class="item_image">
             <p class="item_descr">Winston Churchill était l'ancien premier ministre britannique, homme politique ayant joué un rôle clé dans la victoire contre les forces de l'Axe en 1939 - 1945, il fera également l'objet d'une biographie.</p>
-            <a class="item_actionBtn">View</a>
+            <button class="item_actionBtn">View</button>
         </div>
 
         <div class="content three">
@@ -31,11 +31,34 @@
             <h1 class="item_name">Joseph Staline</h1>
             <img src="/PICTURE3.jpg" alt="Joseph Staline" class="item_image">
             <p class="item_descr">Joseph Staline est un homme d'Etat russe communiste, qui a combattu aux côtés des Alliés durant la Seconde Guerre Mondiale, son armée est rentrée à Berlin menant ainsi à la défaite de l'Allemagne nazie.</p>
-            <a class="item_actionBtn">View</a>
+            <button  class="item_actionBtn">View</button>
         </div>
     </div>
 
+    <div class="overlay">
+        <div class="overlay__row"></div>
+        <div class="overlay__row"></div>
+    </div>
 
+    <section class="previews">
+        <div class="preview">
+            <div class="preview background-image hitler" style="background-image:url(/PICTURE1.jpg);"></div>
+            <h1 class="preview title-image hitler">Adolf Hitler</h1>
+            <div class="preview information">
+                <h2 class="preview information hitler">Adolf Hitler</h2>
+                <span class="preview information date hitler">1889 - 1945</span>
+            </div>
+        </div>
+        
+        <div class="preview_column">
+            <h1 class="preview-title">Enfance</h1>
+            <p class="preview-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, libero rem quis in, quisquam a dolore aspernatur ducimus doloremque nihil est quaerat repellendus inventore excepturi, odio ea eaque labore ratione.</p>
+        </div>
+        <div class="preview_column">
+            <h1 class="preview-title">Adulte</h1>
+            <p class="preview-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quam? Facere, quos est odio culpa quae voluptatum velit maiores totam beatae dolorum laborum, tempore atque veniam nemo iure iste illo!</p>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
