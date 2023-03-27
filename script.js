@@ -1,24 +1,13 @@
-const btnOpen = document.querySelector(".item_actionBtn");
-const previews = document.querySelector(".previews");
-const overlayRowA = document.querySelector(".first_class")
-
-const modalTransition = [
-    {transform: 'translateY(-100px)'},
-    {transform: 'translateY(0px)'}
-];
-
-const modalTiming = {
-    duration: 900,
-    iterations: 1,
-};
+const icon_Hamburger = document.querySelector(".fa-solid")
+const listElement = document.querySelector(".list-link")
 
 window.onload=function(){
-    if(btnOpen){
-        btnOpen.addEventListener('click', () => {
-        console.log("ITS WORKING");
-        previews.style.display = "none";
+    if(icon_Hamburger) {
+        icon_Hamburger.addEventListener('click', () => {
+            console.log("ITS WORKING");
+            listElement.classList.toggle("active")
         })
-    } else {
-        console.log("ITS NOT WORKING");
+    }else {
+        console.log("its not working");
     }
 }

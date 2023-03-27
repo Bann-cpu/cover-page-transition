@@ -1,89 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 *{
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
+    width: 100dvw; 
     height: 100dvh;
-    width: 100dvw;
-    background-color: rgb(133, 121, 175);
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-.container {
-    display: grid;
-    padding: 1rem 5rem 1.5rem; /*H LES CÔTES B*/
-    grid-template-columns: auto auto auto;
-    grid-gap: 50px;
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-bar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-link {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
     position: relative;
-    top: 25%;
-    font-family: 'Playfair Display', serif;
-    overflow: hidden;
+    left: -800px;
+    padding-top: 50px;
 }
 
-.item_image {
-    height: 400px;
-    width: 600px;
-    padding: 1rem 0rem 1rem;
+.active {
+    position: relative;
+    left: 0;
+    transform: translateX(50px);
+    transition: 2s;
 }
 
-.content {
-    display: block;
-    padding: 1rem 0rem 1rem;
-}
-
-.item_name {
-    font-size: 2.5rem;
-}
-
-.item_date {
-    font-size: 1.3rem;
-    font-weight: 500;
-}
-
-.item_descr{
-    font-weight: 600;
-}
-
-.item_actionBtn{
-    font-weight: 900;   
-    font-size: 1.2rem;
-    height: auto;
-    background: transparent;
-    padding: 1rem 3rem 1rem;
-    border-radius: 30px;
-    display: grid;
-    grid-template-rows: auto auto auto;
+.fa-bars {
+    position: relative;
+    bottom: 1005px;
+    left: 97%;
+    height: 50px;
+    width: 50px;
+    color: black;
+    font-size: 3rem;
     text-align: center;
-    position: relative;
-    top: 30px;
-    border: solid black 1px;
-    left: 12rem;
     cursor: pointer;
-}
-
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: grid;
-	grid-template-columns: 100%;
-	pointer-events: none;
-	grid-template-rows: repeat(2); /*repeat(2,1fr)*/
-}
-
-.overlay__row {
-	transform: scaleY(0);
-	will-change: transform;
-}
-
-.overlay__row:first-child {
-	transform-origin: 50% 0%; /*H puis V*/
-}
-
-.overlay__row:last-child {
-	transform-origin: 50% 100%;
 }
