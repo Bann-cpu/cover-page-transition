@@ -36,7 +36,7 @@ a {
     padding-top: 50px;
 }
 
-.active {
+.activeSpecial {
     position: relative;
     left: 0;
     transform: translateX(50px);
@@ -53,4 +53,20 @@ a {
     font-size: 3rem;
     text-align: center;
     cursor: pointer;
+}
+
+.OtherPart {
+    height: 80px;
+    width: 300px;
+    background-color: red;
+    position: relative;
+    top: -800px;
+    left: 50px;
+}
+
+.activated {
+    position: relative;
+    top: -300px; 
+    transform: translateY(30px);
+    transition: 2s;
 }
