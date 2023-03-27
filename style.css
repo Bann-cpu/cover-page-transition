@@ -87,7 +87,3 @@ body{
 .overlay__row:last-child {
 	transform-origin: 50% 100%;
 }
-
-.previews {
-    display: block;
-}

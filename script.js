@@ -2,9 +2,8 @@ const btnOpen = document.querySelector(".item_actionBtn");
 const previews = document.querySelector(".previews");
 const overlayRowA = document.querySelector(".first_class")
 
-
 const modalTransition = [
-    {transform: 'translateY(-10000px)'},
+    {transform: 'translateY(-100px)'},
     {transform: 'translateY(0px)'}
 ];
 
