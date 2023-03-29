@@ -6,13 +6,13 @@
 }
 
 body {
-    width: 100dvw; 
-    height: 100dvh;
+    width: 100%; 
+    height: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
 }
 
-a {
+/*a {
     text-decoration: none;
     color: black;
 }
@@ -43,17 +43,7 @@ a {
     transition: 2s;
 }
 
-.fa-bars {
-    position: relative;
-    bottom: 1005px;
-    left: 97%;
-    height: 50px;
-    width: 50px;
-    color: black;
-    font-size: 3rem;
-    text-align: center;
-    cursor: pointer;
-}
+
 
 .OtherPart {
     height: 80px;
@@ -69,4 +59,62 @@ a {
     top: -300px; 
     transform: translateY(30px);
     transition: 2s;
+}*/
+
+.overlays {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.overlay {
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.overlay:last-child {
+    background-color: blue;
+}
+
+.overlay:first-child {
+    background-color: red;
+    overflow: visible;
+}
+
+.overlay_activated {
+    transform: translateY(-500px);
+    transition: 5s;
+}
+
+.overlay_activated_nd {
+    transform: translateY(500px);
+    transition: 5s;
+}
+
+.container_activated {
+    transform: rotate(90deg);
+    transition: 5s;
+}
+
+.fa-bars {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container {
+    height: 100px;
+    width: 100px;
+    background-color: rebeccapurple;
+    position: relative;
+    top: 500px;
 }
