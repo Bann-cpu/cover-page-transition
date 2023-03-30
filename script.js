@@ -24,7 +24,7 @@ if(backArrow) {
         infoImg.classList.remove("informationsActivated");
         infoImg.classList.toggle("disparitionFrame");
         enterText.style.display = "block"
-        enterText.classList.toggle("overlay_bs_activated");
+        enterText.classList.toggle("aparitionFrame");
 
     })
 }
